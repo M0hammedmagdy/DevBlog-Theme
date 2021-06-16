@@ -80,47 +80,58 @@
 		    <p>2. Choose Settings➪Control Panel.> \System and Security\System</p>
 		    <p>Windows Server 2016</p>
 	            <img src="images/win1/version1.png" alt="image" >			
-
-		    <h4><strong>Task 3 - Interacting With Your First Linux Machine (In-Browser)  </strong></h4>
-	            <p>Press "Start Machine" and press complete</p>
-		    <h4><strong>Task 4 - Running Your First few Commands </strong></h4>
-		    <p><strong> If we wanted to output the text "TryHackMe", what would our command be? </strong></p>
-	            <p>echo TryHackMe</p>
-	            <img src="images/Linux Part 1/echo.png" alt="image" >			
-		    <p><strong>What is the username of who you're logged in as on your deployed Linux machine? </strong></p>
-	            <p>tryHackMe</p>
-		    <h4><strong>Task 5 - Interacting With the Filesystem! </strong></h4>
-	            <p><strong> On the Linux machine that you deploy, how many folders are there? </strong></p>
-	            <p>4</p>
-	            <img src="images/Linux Part 1/ls.png" alt="image" >	
-	            <p><strong>Which directory contains a file? </strong></p>
-	            <p>folder4</p>
-	            <img src="images/Linux Part 1/lsfile.png" alt="image" >	
-	            <p><strong>What is the contents of this file?</strong></p>
-	            <p>Hello World</p>
-	            <img src="images/Linux Part 1/cat.png" alt="image" >	
-	            <p><strong>Use the cd command to navigate to this file and find out the new current working directory. What is the path?</strong></p>
-	            <p>/home/tryhackme/folder4</p>
-	            <img src="images/Linux Part 1/pwd.png" alt="image" >	
-		    <h4><strong>Task 6 - Searching for Files </strong></h4>
-	            <p><strong>Use grep on "access.log" to find the flag that has a prefix of "THM". What is the flag?</strong></p>
-	            <p>THM{ACCESS}</p>
-	            <img src="images/Linux Part 1/grep.png" alt="image" >
-		    <h4><strong>Task 7 - An Introduction to Shell Operators </strong></h4>
-	            <p><strong> If we wanted to run a command in the background, what operator would we want to use? </strong></p>
-                    <p>&</p>
-	            <p><strong>If I wanted to replace the contents of a file named "passwords" with the word "password123", what would my command be?</strong></p>
-	            <p>echo password123 > passwords</p>
-	            <img src="images/Linux Part 1/echo1.png" alt="image" >
-	            <p><strong>Now if I wanted to add "tryhackme" to this file named "passwords" but also keep "passwords123", what would my command be</strong></p>
-	            <p>echo tryhackme >> passwords</p>
-	            <img src="images/Linux Part 1/echo2.png" alt="image" >
-	            <h4><strong>Task  8- Conclusions & Summaries</strong></h4>
-		    <p>Read and press complete</p>
-	            <h4><strong>Task  9- Linux Fundamentals Part 2 </strong></h4>
-		    <p>Read and press complete</p>
-
-
+		    <p><strong>Which user logged in last?</strong></p>
+	            <p>Administrator</p>
+		    <p><strong>When did John log onto the system last?</strong></p>
+		    <p><strong>Answer format: MM/DD/YYYY H:MM:SS AM/PM</strong></p>
+		    <p>cmd > net user john</p>
+	            <p>03/02/2019 5:48:32 PM</p>
+	            <img src="images/win1/d1.png" alt="image" >			
+		    <p><strong>What IP does the system connect to when it first starts?</strong></p>
+	            <p>10.34.2.3</p>
+	            <img src="images/win1/ip.png" alt="image" >	
+		    <p><strong>What two accounts had administrative privileges (other than the Administrator user)? </strong></p>
+	            <p><strong>Answer format: username1, username2</strong></p>
+		    <p>usrmgr > Groups > Administrator</p>
+	            <p>Jenny, Guest</p>
+	            <img src="images/win1/user1,2.png" alt="image" >	
+	            <p><strong>Whats the name of the scheduled task that is malicous.</strong></p>
+	            <p>Clean file system</p>
+	            <img src="images/win1/task.png" alt="image" >	
+	            <p><strong>What file was the task trying to run daily?</strong></p>
+	            <p>nc.ps1</p>
+	            <img src="images/win1/run.png" alt="image" >	
+	            <p><strong>What port did this file listen locally for?</strong></p>
+	            <p>1348</p>	
+		    <p><strong>When did Jenny last logon?</strong></p>
+		    <p>cmd > net user jenny</p>
+	            <p>Never</p>
+	            <img src="images/win1/Jenny.png" alt="image" >
+		    <p><strong>At what date did the compromise take place?</strong></p>
+	            <p><strong>Answer format: MM/DD/YYYY</strong></p>
+                    <p>03/02/2019</p>
+	            <p><strong>At what time did Windows first assign special privileges to a new logon?</strong></p>
+		    <p><strong>Answer format: MM/DD/YYYY HH:MM:SS AM/PM</strong></p>
+	            <p>event viewer > security</p>
+	            <p>03/02/2019 4:04:49 PM</p>
+	            <img src="images/win1/logon.png" alt="image" >
+	            <p><strong>What tool was used to get Windows passwords?</strong></p>
+	            <p>Task Scheduler > GameOver > Actions </p>
+	            <p>Mimikatz</p>
+	            <img src="images/win1/task2.png" alt="image" >
+	            <p><strong>What was the attackers external control and command servers IP?</strong></p>
+		    <p>localhost(c:) > Windows > System32 > drivers > etc > </p>
+		    <p>76.32.97.132</p>
+	            <img src="images/win1/ip.png" alt="image" >
+	            <p><strong>What was the extension name of the shell uploaded via the servers website?</strong></p>
+		    <p>C:\inetpub\wwwroot</p>
+		    <p>.jsp</p>
+	            <img src="images/win1/jsp.png" alt="image" >
+	            <p><strong>What was the last port the attacker opened?</strong></p>
+		    <p>Windos Firewall > Inbound Rules</p>
+		    <p>1337</p>
+	            <p><strong>Check for DNS poisoning, what site was targeted?</strong></p>
+		    <p>google.com</p>
 
 
 
