@@ -75,43 +75,49 @@
 		    <h4><strong>Task 2 - Accessing Your Linux Machine Using SSH (Deploy) </strong></h4>
 		    <p><strong>  I've logged into the Linux Fundamentals Part 2 machine using SSH! </strong></p>
 		    <p>Press "Start Machine" and press complete</>
-		    <h4><strong>Task 3 - Interacting With Your First Linux Machine (In-Browser)  </strong></h4>
-	            <p>Press "Start Machine" and press complete</p>
-		    <h4><strong>Task 4 - Running Your First few Commands </strong></h4>
-		    <p><strong> If we wanted to output the text "TryHackMe", what would our command be? </strong></p>
-	            <p>echo TryHackMe</p>
-	            <img src="images/Linux Part 1/echo.png" alt="image" >			
-		    <p><strong>What is the username of who you're logged in as on your deployed Linux machine? </strong></p>
-	            <p>tryHackMe</p>
-		    <h4><strong>Task 5 - Interacting With the Filesystem! </strong></h4>
-	            <p><strong> On the Linux machine that you deploy, how many folders are there? </strong></p>
-	            <p>4</p>
-	            <img src="images/Linux Part 1/ls.png" alt="image" >	
-	            <p><strong>Which directory contains a file? </strong></p>
-	            <p>folder4</p>
-	            <img src="images/Linux Part 1/lsfile.png" alt="image" >	
-	            <p><strong>What is the contents of this file?</strong></p>
-	            <p>Hello World</p>
-	            <img src="images/Linux Part 1/cat.png" alt="image" >	
-	            <p><strong>Use the cd command to navigate to this file and find out the new current working directory. What is the path?</strong></p>
-	            <p>/home/tryhackme/folder4</p>
-	            <img src="images/Linux Part 1/pwd.png" alt="image" >	
-		    <h4><strong>Task 6 - Searching for Files </strong></h4>
-	            <p><strong>Use grep on "access.log" to find the flag that has a prefix of "THM". What is the flag?</strong></p>
-	            <p>THM{ACCESS}</p>
-	            <img src="images/Linux Part 1/grep.png" alt="image" >
-		    <h4><strong>Task 7 - An Introduction to Shell Operators </strong></h4>
-	            <p><strong> If we wanted to run a command in the background, what operator would we want to use? </strong></p>
-                    <p>&</p>
-	            <p><strong>If I wanted to replace the contents of a file named "passwords" with the word "password123", what would my command be?</strong></p>
-	            <p>echo password123 > passwords</p>
-	            <img src="images/Linux Part 1/echo1.png" alt="image" >
-	            <p><strong>Now if I wanted to add "tryhackme" to this file named "passwords" but also keep "passwords123", what would my command be</strong></p>
-	            <p>echo tryhackme >> passwords</p>
-	            <img src="images/Linux Part 1/echo2.png" alt="image" >
-	            <h4><strong>Task  8- Conclusions & Summaries</strong></h4>
-		    <p>Read and press complete</p>
-	            <h4><strong>Task  9- Linux Fundamentals Part 2 </strong></h4>
+	            <img src="images/Linux Part 2/ssh.png" alt="image" >			
+		    <h4><strong>Task 3 -  Introduction to Flags and Switches  </strong></h4>
+	            <p><strong> Explore the manual page of the ls command </strong></p>
+	            <p> press complete</p>
+	            <p><strong> What directional arrow key would we use to navigate down the manual page? </strong></p>
+	            <p> down </p>
+	            <p><strong>What flag would we use to display the output in a "human-readable" way? </strong></p>
+	            <p>-h  ( man ls ) </p>
+		    <h4><strong>Task 4 - Filesystem Interaction Continued  </strong></h4>
+		    <p><strong> How would you create the file named "newnote"? </strong></p>
+	            <p>touch newnote</p>
+	            <p><strong> On the deployable machine, what is the file type of "unknown1" in "tryhackme's" home directory? </strong></p>
+	            <p>ASCII text</p>
+	            <p><strong> How would we move the file "myfile" to the directory "myfolder" </strong></p>
+	            <p> mv myfile myfolder </p>
+	            <img src="images/Linux Part 2/mv.png" alt="image" >			
+		    <p><strong> What are the contents of this file? </strong></p>
+	            <p> THM{FILESYSTEM} </p>
+	            <img src="images/Linux Part 2/cat.png" alt="image" >
+		    <h4><strong>Task 5 - Permissions 101 </strong></h4>
+	            <p><strong> On the deployable machine, who is the owner of "important"? </strong></p>
+	            <p> user2 </p>
+	            <img src="images/Linux Part 2/-l.png" alt="image" >	
+	            <p><strong> What would the command be to switch to the user "user2"? </strong></p>
+	            <p> su user2 </p>
+	            <img src="images/Linux Part 2/su.png" alt="image" >	
+	            <p><strong> Now switch to this user "user2" using the password "user2" </strong></p>
+	            <p>No answer neededd</p>	
+	            <p><strong>Output the contents of "important", what is the flag?</strong></p>
+	            <p>THM{SU_USER2}</p>
+	            <img src="images/Linux Part 2/flag.png" alt="image" >	
+		    <h4><strong>Task 6 - Common Directories  </strong></h4>
+	            <p><strong>Read all that is in the task and press complete</strong></p>
+	            <p>No answer neededd</p>
+	            <p><strong>What is the directory path that would we expect logs to be stored in?</strong></p>
+	            <p>/var/log</p>
+	            <p><strong>What root directory is similar to how RAM on a computer works?</strong></p>
+	            <p>/tmp</p>
+	            <p><strong>Name the home directory of the root user </strong></p>
+	            <p>/root</p>
+		    <h4><strong>Task 7 - Conclusions and Summaries </strong></h4>
+	            <p><strong> Read and press complete </strong></p>
+	            <h4><strong>Task  8- Linux Fundamentals Part 3 </strong></h4>
 		    <p>Read and press complete</p>
 
 
