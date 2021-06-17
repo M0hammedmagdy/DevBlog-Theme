@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>InfoSec Write-ups</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+	<script defer src="../assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/theme-7.css">
+    
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="../index.html">Infosec Blog</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="../assets/images/profile1.jpg" alt="image" >			
+					
+					<div class="bio mb-3">Hi, my name is Mohammed Magdy. <br>I am a CyberSecurity researcher and CTF player.<br><a href="../about.html">Find out more about me</a></div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+			            <li class="list-inline-item"><a href="https://twitter.com/0xmoka"><i class="fab fa-twitter fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.linkedin.com/in/0xmoka/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://github.com/M0hammedmagdy"><i class="fab fa-github-alt fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://web.facebook.com/0xmagdy"><i class="fab fa-facebook-f"></i></a></li>
+			        </ul><!--//social-list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item">
+					    <a class="nav-link" href="../index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
+					</li>
+					
+					<li class="nav-item">
+					    <a class="nav-link" href="../about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+					</li>
+				</ul>
+				
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    
+	    <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container">
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2"><a href="https://tryhackme.com/room/linuxfundamentalspart1">Introductory Networking</a></h2>
+			    </header>
+			    </a>
+		    <h4><strong>Task 1 - Introduction </strong></h4>
+		    <p>Read and press complete</p>
+		    <h4><strong>Task 2 -  A Bit of Background on Linux </strong></h4>
+		    <p><strong> Research: What year was the first release of a Linux operating system? </strong></p>
+		    <p>1991</>
+		    <h4><strong>Task 3 - Interacting With Your First Linux Machine (In-Browser)  </strong></h4>
+	            <p>Press "Start Machine" and press complete</p>
+		    <h4><strong>Task 4 - Running Your First few Commands </strong></h4>
+		    <p><strong> If we wanted to output the text "TryHackMe", what would our command be? </strong></p>
+	            <p>echo TryHackMe</p>
+	            <img src="images/Linux Part 1/echo.png" alt="image" >			
+		    <p><strong>What is the username of who you're logged in as on your deployed Linux machine? </strong></p>
+	            <p>tryHackMe</p>
+		    <h4><strong>Task 5 - Interacting With the Filesystem! </strong></h4>
+	            <p><strong> On the Linux machine that you deploy, how many folders are there? </strong></p>
+	            <p>4</p>
+	            <img src="images/Linux Part 1/ls.png" alt="image" >	
+	            <p><strong>Which directory contains a file? </strong></p>
+	            <p>folder4</p>
+	            <img src="images/Linux Part 1/lsfile.png" alt="image" >	
+	            <p><strong>What is the contents of this file?</strong></p>
+	            <p>Hello World</p>
+	            <img src="images/Linux Part 1/cat.png" alt="image" >	
+	            <p><strong>Use the cd command to navigate to this file and find out the new current working directory. What is the path?</strong></p>
+	            <p>/home/tryhackme/folder4</p>
+	            <img src="images/Linux Part 1/pwd.png" alt="image" >	
+		    <h4><strong>Task 6 - Searching for Files </strong></h4>
+	            <p><strong>Use grep on "access.log" to find the flag that has a prefix of "THM". What is the flag?</strong></p>
+	            <p>THM{ACCESS}</p>
+	            <img src="images/Linux Part 1/grep.png" alt="image" >
+		    <h4><strong>Task 7 - An Introduction to Shell Operators </strong></h4>
+	            <p><strong> If we wanted to run a command in the background, what operator would we want to use? </strong></p>
+                    <p>&</p>
+	            <p><strong>If I wanted to replace the contents of a file named "passwords" with the word "password123", what would my command be?</strong></p>
+	            <p>echo password123 > passwords</p>
+	            <img src="images/Linux Part 1/echo1.png" alt="image" >
+	            <p><strong>Now if I wanted to add "tryhackme" to this file named "passwords" but also keep "passwords123", what would my command be</strong></p>
+	            <p>echo tryhackme >> passwords</p>
+	            <img src="images/Linux Part 1/echo2.png" alt="image" >
+	            <h4><strong>Task  8- Conclusions & Summaries</strong></h4>
+		    <p>Read and press complete</p>
+	            <h4><strong>Task  9- Linux Fundamentals Part 2 </strong></h4>
+		    <p>Read and press complete</p>
+
+
+
+
+
+			    <div class="blog-post-body">
+				    
+				    <section class="blog-list px-3 py-5 p-md-5">
+		    <div class="container">
+			    
+			    
+			    
+				
+		    </div>
+	    </section>
+
+</body>
+</html> 
