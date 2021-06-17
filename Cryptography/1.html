@@ -93,38 +93,45 @@
 		    <p><strong> What's 118613842 % 9091 </strong></p>
 		    <p>3565</p>
 	            <img src="images/Crypto 101/python.png" alt="image" >			
-		    <p><strong>What is the username of who you're logged in as on your deployed Linux machine? </strong></p>
-	            <p>tryHackMe</p>
-		    <h4><strong>Task 5 - Interacting With the Filesystem! </strong></h4>
-	            <p><strong> On the Linux machine that you deploy, how many folders are there? </strong></p>
-	            <p>4</p>
-	            <img src="images/Linux Part 1/ls.png" alt="image" >	
-	            <p><strong>Which directory contains a file? </strong></p>
-	            <p>folder4</p>
-	            <img src="images/Linux Part 1/lsfile.png" alt="image" >	
-	            <p><strong>What is the contents of this file?</strong></p>
-	            <p>Hello World</p>
-	            <img src="images/Linux Part 1/cat.png" alt="image" >	
-	            <p><strong>Use the cd command to navigate to this file and find out the new current working directory. What is the path?</strong></p>
-	            <p>/home/tryhackme/folder4</p>
-	            <img src="images/Linux Part 1/pwd.png" alt="image" >	
-		    <h4><strong>Task 6 - Searching for Files </strong></h4>
-	            <p><strong>Use grep on "access.log" to find the flag that has a prefix of "THM". What is the flag?</strong></p>
-	            <p>THM{ACCESS}</p>
-	            <img src="images/Linux Part 1/grep.png" alt="image" >
-		    <h4><strong>Task 7 - An Introduction to Shell Operators </strong></h4>
-	            <p><strong> If we wanted to run a command in the background, what operator would we want to use? </strong></p>
-                    <p>&</p>
-	            <p><strong>If I wanted to replace the contents of a file named "passwords" with the word "password123", what would my command be?</strong></p>
-	            <p>echo password123 > passwords</p>
-	            <img src="images/Linux Part 1/echo1.png" alt="image" >
-	            <p><strong>Now if I wanted to add "tryhackme" to this file named "passwords" but also keep "passwords123", what would my command be</strong></p>
-	            <p>echo tryhackme >> passwords</p>
-	            <img src="images/Linux Part 1/echo2.png" alt="image" >
-	            <h4><strong>Task  8- Conclusions & Summaries</strong></h4>
-		    <p>Read and press complete</p>
-	            <h4><strong>Task  9- Linux Fundamentals Part 2 </strong></h4>
-		    <p>Read and press complete</p>
+		    <h4><strong>Task 5 - Types of Encryption </strong></h4>
+	            <p><strong>  Should you trust DES? Yea/Nay </strong></p>
+	            <p>Nay</p>
+	            <p><strong>What was the result of the attempt to make DES more secure so that it could be used for longer?</strong></p>
+	            <p>Triple DES</p>
+	            <p><strong>Is it ok to share your public key? Yea/Nay</strong></p>
+	            <p>Yea</p>
+		    <h4><strong>Task 6 - RSA - Rivest Shamir Adleman </strong></h4>
+	            <p><strong> p = 4391, q = 6659. What is n? </strong></p>
+	            <p>29239669</p>
+	            <img src="images/Crypto 101/n.png" alt="image" >
+		    <h4><strong>Task 7 - Establishing Keys Using Asymmetric Cryptography </strong></h4>
+                    <p>Read and press complete</p>
+	            <h4><strong>Task  8- Digital signatures and Certificates </strong></h4>
+		    <p>CloudFlare</p>
+	            <img src="images/Crypto 101/cloudflare.png" alt="image" >
+	            <h4><strong>Task  9- SSH Authentication </strong></h4>
+		    <p>Read and Download the SSH Private Key attached to this room</p>
+	            <p><strong> What algorithm does the key use? </strong></p>
+	            <p>RSA</p>
+	            <img src="images/Crypto 101/rsa.png" alt="image" >
+	            <p><strong> Crack the password with John The Ripper and rockyou, what's the passphrase for the key? </strong></p>
+		    <p>/usr/share/john/ssh2john.py [downloaded file location] > [new file name]</p>
+		    <p>john [new file name] --worldlist=[rockyou.txt file location]</p>
+	            <p>delicious</p>
+	            <img src="images/Crypto 101/decrypt.png" alt="image" >
+	            <h4><strong>Task  10 - Explaining Diffie Hellman Key Exchange </strong></h4>
+                    <p>Read and press complete</p>
+	            <h4><strong>Task  11 - PGP, GPG and AES </strong></h4>
+		    <p><strong> Time to try some GPG. Download the archive attached and extract it somewhere sensible. </strong></p>
+		    <p>No answer needed</p>
+		    <p><strong> You have the private key, and a file encrypted with the public key. Decrypt the file. What's the secret word? </strong></p>
+		    <p>Pineapple</p>
+	            <img src="images/Crypto 101/sec.png" alt="image" >
+	            <h4><strong>Task  12 - The Future - Quantum Computers and Encryption </strong></h4>
+                    <p>Read and press complete</p>
+
+		    
+
 
 
 
