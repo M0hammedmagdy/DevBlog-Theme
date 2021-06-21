@@ -131,57 +131,41 @@
 	            <img src="images/nmap/--script.png" alt="image" >
 		    <p><strong>How would you activate all of the scripts in the "vuln" category?</strong></p>
 		    <p>--script=vuln</p>	
+		    <h4><strong>Task 4 - (Scan Types) Overview </strong></h4>
+	            <p>Read and press complete</p>
+		    <h4><strong>Task 5 - (Scan Types) TCP Connect Scans </strong></h4>
+	            <p><strong> Which RFC defines the appropriate behaviour for the TCP protocol? </strong></p>
+	            <p>RFC 793</p>
+	            <p><strong>If a port is closed, which flag should the server send back to indicate this? </strong></p>
+	            <p>RST</p>	
+		    <h4><strong>Task 6 - (Scan Types) SYN Scans </strong></h4>
+	            <p><strong> There are two other names for a SYN scan, what are they?</strong></p>
+	            <p>Half-Open, Stealth</p>
+	            <p><strong> Can Nmap use a SYN scan without Sudo permissions (Y/N)?</strong></p>
+	            <p>N</p>
+		    <h4><strong>Task 7 - (Scan Types) UDP Scans </strong></h4>
+	            <p><strong>  If a UDP port doesn't respond to an Nmap scan, what will it be marked as? </strong></p>
+                    <p>open|filtered</p>
+	            <p><strong>When a UDP port is closed, by convention the target should send back a "port unreachable" message. Which protocol would it use to do so?</strong></p>
+	            <p>ICMP</p>
+	            <h4><strong>Task  8- (Scan Types) NULL, FIN and Xmas </strong></h4>
+	            <p><strong>  Which of the three shown scan types uses the URG flag?</strong></p>
+	            <p>xmas</p>
+	            <p><strong> There are two other names for a SYN scan, what are they?</strong></p>
+	            <p>Firewall Evasion</p>
+	            <p><strong> Which common OS may respond to a NULL, FIN or Xmas scan with a RST for every port?</strong></p>
+	            <p>Microsoft Windows</p>
+		    <h4><strong>Task  9- (Scan Types) ICMP Network Scanning </strong></h4>
+	            <p><strong>  How would you perform a ping sweep on the 172.16.x.x network (Netmask: 255.255.0.0) using Nmap? (CIDR notation)</strong></p>
+	            <p>nmap -sn 172.16.0.0/16</p>
+		    <h4><strong>Task  10- (NSE Scripts) Overview </strong></h4>
+	            <p><strong>  What language are NSE scripts written in?</strong></p>
+	            <p>Lua</p>
+	            <p><strong> Which category of scripts would be a very bad idea to run in a production environment?</strong></p>
+	            <p>intrusive</p>
 		    
-
-		    <p><strong> What networking constructs are used to direct traffic to the right application on a server?</strong></p>
-		    <p>Ports</p>
-		    <p><strong> What networking constructs are used to direct traffic to the right application on a server?</strong></p>
-		    <p>Ports</p>
-		    <p><strong> What networking constructs are used to direct traffic to the right application on a server?</strong></p>
-		    <p>Ports</p>
 		    
 		    
-		    
-		    
-		    
-		    
-		    <h4><strong>Task 4 - Running Your First few Commands </strong></h4>
-		    <p><strong> If we wanted to output the text "TryHackMe", what would our command be? </strong></p>
-	            <p>echo TryHackMe</p>
-	            <img src="images/Linux Part 1/echo.png" alt="image" >			
-		    <p><strong>What is the username of who you're logged in as on your deployed Linux machine? </strong></p>
-	            <p>tryHackMe</p>
-		    <h4><strong>Task 5 - Interacting With the Filesystem! </strong></h4>
-	            <p><strong> On the Linux machine that you deploy, how many folders are there? </strong></p>
-	            <p>4</p>
-	            <img src="images/Linux Part 1/ls.png" alt="image" >	
-	            <p><strong>Which directory contains a file? </strong></p>
-	            <p>folder4</p>
-	            <img src="images/Linux Part 1/lsfile.png" alt="image" >	
-	            <p><strong>What is the contents of this file?</strong></p>
-	            <p>Hello World</p>
-	            <img src="images/Linux Part 1/cat.png" alt="image" >	
-	            <p><strong>Use the cd command to navigate to this file and find out the new current working directory. What is the path?</strong></p>
-	            <p>/home/tryhackme/folder4</p>
-	            <img src="images/Linux Part 1/pwd.png" alt="image" >	
-		    <h4><strong>Task 6 - Searching for Files </strong></h4>
-	            <p><strong>Use grep on "access.log" to find the flag that has a prefix of "THM". What is the flag?</strong></p>
-	            <p>THM{ACCESS}</p>
-	            <img src="images/Linux Part 1/grep.png" alt="image" >
-		    <h4><strong>Task 7 - An Introduction to Shell Operators </strong></h4>
-	            <p><strong> If we wanted to run a command in the background, what operator would we want to use? </strong></p>
-                    <p>&</p>
-	            <p><strong>If I wanted to replace the contents of a file named "passwords" with the word "password123", what would my command be?</strong></p>
-	            <p>echo password123 > passwords</p>
-	            <img src="images/Linux Part 1/echo1.png" alt="image" >
-	            <p><strong>Now if I wanted to add "tryhackme" to this file named "passwords" but also keep "passwords123", what would my command be</strong></p>
-	            <p>echo tryhackme >> passwords</p>
-	            <img src="images/Linux Part 1/echo2.png" alt="image" >
-	            <h4><strong>Task  8- Conclusions & Summaries</strong></h4>
-		    <p>Read and press complete</p>
-	            <h4><strong>Task  9- Linux Fundamentals Part 2 </strong></h4>
-		    <p>Read and press complete</p>
-
 
 
 
