@@ -76,50 +76,62 @@
 		    <p><strong> I've logged into the Linux Fundamentals Part 3 machine using SSH and have deployed the AttackBox successfully! </strong></p>
 		    <p>No answer needed</>
 		    <h4><strong>Task 3 - Terminal Text Editors </strong></h4>
-	    
-	    
-	    
-	    
-	    
-	    
-	            <p>Press "Start Machine" and press complete</p>
-		    <h4><strong>Task 4 - Running Your First few Commands </strong></h4>
-		    <p><strong> If we wanted to output the text "TryHackMe", what would our command be? </strong></p>
-	            <p>echo TryHackMe</p>
-	            <img src="images/Linux Part 1/echo.png" alt="image" >			
-		    <p><strong>What is the username of who you're logged in as on your deployed Linux machine? </strong></p>
-	            <p>tryHackMe</p>
-		    <h4><strong>Task 5 - Interacting With the Filesystem! </strong></h4>
-	            <p><strong> On the Linux machine that you deploy, how many folders are there? </strong></p>
-	            <p>4</p>
-	            <img src="images/Linux Part 1/ls.png" alt="image" >	
-	            <p><strong>Which directory contains a file? </strong></p>
-	            <p>folder4</p>
-	            <img src="images/Linux Part 1/lsfile.png" alt="image" >	
-	            <p><strong>What is the contents of this file?</strong></p>
-	            <p>Hello World</p>
-	            <img src="images/Linux Part 1/cat.png" alt="image" >	
-	            <p><strong>Use the cd command to navigate to this file and find out the new current working directory. What is the path?</strong></p>
-	            <p>/home/tryhackme/folder4</p>
-	            <img src="images/Linux Part 1/pwd.png" alt="image" >	
-		    <h4><strong>Task 6 - Searching for Files </strong></h4>
-	            <p><strong>Use grep on "access.log" to find the flag that has a prefix of "THM". What is the flag?</strong></p>
-	            <p>THM{ACCESS}</p>
-	            <img src="images/Linux Part 1/grep.png" alt="image" >
-		    <h4><strong>Task 7 - An Introduction to Shell Operators </strong></h4>
-	            <p><strong> If we wanted to run a command in the background, what operator would we want to use? </strong></p>
-                    <p>&</p>
-	            <p><strong>If I wanted to replace the contents of a file named "passwords" with the word "password123", what would my command be?</strong></p>
-	            <p>echo password123 > passwords</p>
-	            <img src="images/Linux Part 1/echo1.png" alt="image" >
-	            <p><strong>Now if I wanted to add "tryhackme" to this file named "passwords" but also keep "passwords123", what would my command be</strong></p>
-	            <p>echo tryhackme >> passwords</p>
-	            <img src="images/Linux Part 1/echo2.png" alt="image" >
-	            <h4><strong>Task  8- Conclusions & Summaries</strong></h4>
-		    <p>Read and press complete</p>
-	            <h4><strong>Task  9- Linux Fundamentals Part 2 </strong></h4>
-		    <p>Read and press complete</p>
-
+		    <p><strong> Create a file using Nano </strong></p>
+	            <p>No answer needed</p>
+		    <p><strong> Edit "task3" located in "tryhackme"'s home directory using Nano. What is the flag? (nano task3) </strong></p>
+	            <p>THM{TEXT_EDITORS}</p>
+	            <img src="images/Linux Part 3/nano.png" alt="image" >			
+		    <h4><strong>Task 4 - General/Useful Utilities </strong></h4>
+		    <p><strong> Ensure you are connected to the deployed instance (MACHINE_IP) </strong></p>
+	            <p>No answer needed</p>
+		    <p><strong>Now, use Python 3's "HTTPServer" module to start a web server in the home directory of the "tryhackme" user on the deployed instance.</strong></p>
+	            <p>No answer needed</p>
+	            <img src="images/Linux Part 3/http.png" alt="image" >			
+		    <p><strong>Download the file http://MACHINE_IP:8000/.flag.txt onto the TryHackMe AttackBox</strong></p>
+		    <p><strong>What are the contents?</strong></p>
+	            <p>THM{WGET_WEBSERVER}</p>
+	            <img src="images/Linux Part 3/wget.png" alt="image" >
+	    	    <p><strong>Create and download files to further apply your learning -- see how you can read the documentation on Python3's "HTTPServer" module. </strong></p>
+	    	    <p><strong>Use Ctrl + C to stop the Python3 HTTPServer module once you are finished.</strong></p>
+	            <p>No answer needed</p>	    
+		    <h4><strong>Task 5 - Processes 101 </strong></h4>
+	            <p><strong> Read me! </strong></p>
+	            <p>No answer needed</p>
+	            <p><strong> If we were to launch a process where the previous ID was "300", what would the ID of this new process be? </strong></p>
+	            <p>301</p>
+	            <p><strong> If we wanted to cleanly kill a process, what signal would we send it? </strong></p>
+	            <p>SIGTERM</p>
+	            <p><strong> Locate the process that is running on the deployed instance (MACHINE_IP). What flag is given? (ps aux) </strong></p>
+	            <p>THM{PROCESSES}</p>
+	            <img src="images/Linux Part 3/processes.png" alt="image" >
+	            <p><strong> What command would we use to stop the service "myservice"? </strong></p>
+	            <p>systemctl stop myservice</p>
+	            <p><strong> What command would we use to start the same service on the boot-up of the system? </strong></p>
+	            <p>systemctl enable myservice</p>
+	            <p><strong> What command would we use to bring a previously backgrounded process back to the foreground? </strong></p>
+	            <p>fg</p>	
+		    <h4><strong>Task 6 - Maintaining Your System: Automation </strong></h4>
+	            <p><strong>Ensure you are connected to the deployed instance and look at the running crontabs.</strong></p>
+	            <p>No answer needed</p>
+	            <p><strong>When will the crontab on the deployed instance (MACHINE_IP) run? (crontab -e)</strong></p>
+	            <p>@reboot</p>	    
+	            <img src="images/Linux Part 3/crontab.png" alt="image" >
+		    <h4><strong>Task 7 - Maintaining Your System: Package Management </strong></h4>
+	            <p><strong>  Since TryHackMe instances do not have an internet connection...this task only requires you to read through the material. </strong></p>
+                    <p>No answer needed</p>
+	            <h4><strong>Task  8- Maintaining Your System: Logs </strong></h4>
+	            <p><strong>Look for the apache2 logs on the deployable Linux machine</strong></p>
+	            <p>No answer needed</p>
+	            <p><strong>What is the IP address of the user who visited the site? (nano /var/log/apache2/access.log.1)</strong></p>
+	            <p>10.9.232.111</p>
+	            <img src="images/Linux Part 3/ip.png" alt="image" >
+	            <p><strong>What file did they access?</strong></p>
+	            <p>catsanddogs.jpg</p>
+	  	    <h4><strong>Task  9- Conclusions & Summaries </strong></h4>
+	            <p><strong> Terminate the machine deployed in this room from task 2. </strong></p>
+	            <p>No answer needed</p>
+	            <p><strong>Continue your learning in other Linux-dedicated rooms</strong></p>
+	            <p>No answer needed</p>
 
 
 
