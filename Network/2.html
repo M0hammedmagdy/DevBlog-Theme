@@ -167,11 +167,37 @@
 	            <p><strong> What optional argument can the ftp-anon.nse script take?</strong></p>
 	            <p>maxlist</p>
 		    <p>Read the <a target="_blank" rel="noopener" href="https://nmap.org/nsedoc/scripts/ftp-anon.html">ftp-anon doc</a>.</p>
-		    
-		    
-
-
-
+		    <h4><strong>Task  12- (NSE Scripts) Searching for Scripts </strong></h4>
+	            <p><strong> Search for "smb" scripts in the /usr/share/nmap/scripts/ directory using either of the demonstrated methods. What is the filename of the script which determines the underlying OS of the SMB server?</strong></p>
+	            <p><strong> grep smb /usr/share/nmap/scripts/script.db | grep -e '-os'</strong></p>
+	            <p>smb-os-discovery.nse</p>
+	            <p><strong> Read through this script. What does it depend on?</strong></p>
+	            <p><strong> rep dependencies /usr/share/nmap/scripts/smb-os-discovery.nse</strong></p>
+	            <p>smb-brute</p>		    
+		    <h4><strong>Task  13- Firewall Evasion </strong></h4>
+	            <p><strong> Which simple (and frequently relied upon) protocol is often blocked, requiring the use of the -Pn switch?</strong></p>
+	            <p>ICMP</p>
+	            <p><strong> [Research] Which Nmap switch allows you to append an arbitrary length of random data to the end of packets?</strong></p>
+	            <p>--data-length</p>
+		    <h4><strong>Task  14- Practical </strong></h4>
+	            <p><strong> Does the target (MACHINE_IP)respond to ICMP (ping) requests (Y/N)?</strong></p>
+	            <p>N</p>
+	            <p><strong> Perform an Xmas scan on the first 999 ports of the target -- how many ports are shown to be open or filtered?</strong></p>
+	            <p>999</p>
+	            <img src="images/nmap/nmap1.png" alt="image" >
+	            <p><strong> There is a reason given for this -- what is it?</strong></p>
+                    <p><strong> Note: The answer will be in your scan results. Think carefully about which switches to use -- and read the hint before asking for help!</strong></p>
+	            <p>No Response</p>
+	            <p><strong> Perform a TCP SYN scan on the first 5000 ports of the target -- how many ports are shown to be open?</strong></p>
+	            <p>5</p>
+	            <img src="images/nmap/nmap2.png" alt="image" >
+	            <p><strong> Open Wireshark (see Cryillic's Wireshark Room for instructions) and perform a TCP Connect scan against port 80 on the target, monitoring the results. Make sure you understand what's going on.</strong></p>
+	            <p>No answer needed</p>
+	            <p><strong> Deploy the ftp-anon script against the box. Can Nmap login successfully to the FTP server on port 21? (Y/N)</strong></p>
+	            <p>Y</p>
+	            <img src="images/nmap/nmap3.png" alt="image" >
+		    <h4><strong>Task  15- Conclusion  </strong></h4>
+	            <p>Read and press complete</p>
 
 			    <div class="blog-post-body">
 				    
